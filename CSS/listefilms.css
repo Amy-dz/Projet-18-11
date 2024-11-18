@@ -7,11 +7,7 @@ h1{
     text-align: center;
 }
 
-#row1{
-    display: block;
-}
-
-.card, .card2{
+.card{
     display: inline-block;
-    background-color: white;
+    margin-left: 75px;
 }
