@@ -1,0 +1,48 @@
+html,
+body {
+  background-color: rgb(19, 19, 19);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Couleur blanche pour contraster */
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Effet lumineux */
+  animation: blink 1s infinite; /* Animation clignotante */
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Ligne LED rouge en bas de la navbar */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, red, darkred, red);
+  animation: led 2s linear infinite; /* Animation de défilement */
+}
+
+/* Animation pour la ligne LED */
+@keyframes led {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
