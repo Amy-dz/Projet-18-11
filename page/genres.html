@@ -19,67 +19,257 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/./Projet-18-11/img/detail_films/favicon.ico"><link/>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/./Projet-18-11/img/detail_films/favicon.ico"
+    />
+    <link />
 
     <link rel="stylesheet" href="../CSS/genres.css" />
   </head>
   <body>
-    <div class="container mt-5">
-      <h1 class="text-center mb-5" data-aos="fade-up">
-        Découvrez les Genres de Films
-      </h1>
-      <div class="row">
-        <!-- Genre Action -->
-        <div
-          class="col-12 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-right"
-          data-aos-delay="100"
+    <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">CinéFlix</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <div class="card genre-card">
-            <i class="fa-solid fa-bolt fa-flip"></i>
-            <h5>Action</h5>
-            <p>Films pleins d'action, de courses-poursuites et d'aventures.</p>
-          </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="page/listefilms.html"
+                >Liste des films</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="page/genres.html">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/genres.html"
+                    >Science-Fiction</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/genres.html">Horreur</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="page/genres.html">Romance</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Nouveautés</a
+              >
+            </li>
+          </ul>
         </div>
-        <!-- Genre Science-fiction -->
-        <div
-          class="col-12 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-right"
-          data-aos-delay="400"
-        >
-          <div class="card genre-card">
-            <i class="fa-solid fa-rocket fa-spin fa-spin-reverse"></i>
-            <h5>Science-Fiction</h5>
-            <p>Films qui explorent les possibilités futuristes et l'univers.</p>
+      </div>
+    </nav>
+    <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+
+    <main>
+      <div class="container mt-5">
+        <h1 class="text-center mb-5" data-aos="fade-up">
+          Découvrez les Genres de Films
+        </h1>
+        <div class="row">
+          <!-- Genre Action -->
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-3 blabla"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <div class="card genre-card">
+              <i class="fa-solid fa-bolt fa-flip"></i>
+              <h5>Action</h5>
+              <p>
+                Films pleins d'action, de courses-poursuites et d'aventures.
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Genre Horreur -->
-        <div
-          class="col-12 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
-          <div class="card genre-card">
-            <i class="fa-solid fa-ghost fa-fade"></i>
-            <h5>Horreur</h5>
-            <p>Films effrayants qui explorent les peurs et les frissons.</p>
+          <!-- Genre Science-fiction -->
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-3 blabla"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
+            <div class="card genre-card">
+              <i class="fa-solid fa-rocket fa-spin fa-spin-reverse"></i>
+              <h5>Science-Fiction</h5>
+              <p>
+                Films qui explorent les possibilités futuristes et l'univers.
+              </p>
+            </div>
           </div>
-        </div>
-        <!-- Genre Romance -->
-        <div
-          class="col-12 col-sm-6 col-md-6 col-lg-3"
-          data-aos="fade-left"
-          data-aos-delay="600"
-        >
-          <div class="card genre-card">
-            <i class="fa-solid fa-heart-pulse fa-beat"></i>
-            <h5>Romance</h5>
-            <p>Films sur l'amour, les relations et les émotions profondes.</p>
+          <!-- Genre Horreur -->
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-3 blabla"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="card genre-card">
+              <i class="fa-solid fa-ghost fa-fade"></i>
+              <h5>Horreur</h5>
+              <p>Films effrayants qui explorent les peurs et les frissons.</p>
+            </div>
+          </div>
+          <!-- Genre Romance -->
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-3 blabla"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <div class="card genre-card">
+              <i class="fa-solid fa-heart-pulse fa-beat"></i>
+              <h5>Romance</h5>
+              <p>Films sur l'amour, les relations et les émotions profondes.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Colonne 1 : Pages principales -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Pages principales</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="index.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="page/listefilms.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Liste des films</a
+                >
+              </li>
+              <li>
+                <a
+                  href="page/genres.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Genres</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Nouveautés</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 2 : Informations de contact -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled mailtel">
+              <li>
+                <a href="mailto:cineflix@cntct.com"
+                  ><i class="fas fa-envelope"></i> cineflix@cntct.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+123456789"
+                  ><i class="fas fa-phone"></i> +33 1 23 45 67 89</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Rue des Films, Paris
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 : Réseaux sociaux -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Suivez-nous</h5>
+            <div class="social-icons">
+              <a href="#" class="footer-icon animate__animated animate__flash"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-icon animate__animated animate__flash"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+
+              <a href="#" class="footer-icon animate__animated animate__flash"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Colonne 4 : Mentions légales -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Liens utiles</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Mentions légales</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bas du footer -->
+        <div class="text-center mt-4">
+          <p>&copy; 2024 CinéFlix. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-------------------------------------------------------------------------------- JAVASCRIPT ----------------------------------------------------------------------->
+
+    <!-------------------------------------------------------------------------------- JAVASCRIPT ----------------------------------------------------------------------->
+
+    <!-------------------------------------------------------------------------------- JAVASCRIPT ----------------------------------------------------------------------->
     <!-- AOS JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
