@@ -160,7 +160,8 @@ h1 {
   position: relative;
   text-align: center;
   color: white;
-  height: 30vh;
+  height: 3vh;
+  padding-bottom: 200px;
   /* background: url("https://via.placeholder.com/1920x400") no-repeat center/cover; */
 }
 
@@ -178,6 +179,7 @@ h1 {
   font-size: 5rem;
   z-index: 1;
 }
+
 .mt-4 h2 {
   color: white;
 }
@@ -210,4 +212,27 @@ h1 {
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.9rem;
+}
+
+.genres {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.genres h2 {
+  color: white;
+}
+@media (max-width: 650px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel {
+    display: none;
+  }
+  .banner h1 {
+    padding-top: 200px;
+    font-size: 3rem;
+  }
 }
