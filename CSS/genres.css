@@ -1,0 +1,54 @@
+html,
+body {
+  background-color: rgb(19, 19, 19);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Assurez-vous que les cartes ne débordent pas */
+.genre-card {
+  background-color: #ffffff;
+  border: 5px solid #6e6e6e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Empêcher le débordement */
+  overflow: hidden;
+  max-width: 100%; /* S'assure que la carte ne dépasse jamais la largeur de son conteneur */
+  height: auto; /* Laissez la hauteur s'ajuster en fonction du contenu */
+}
+
+/* Icônes dans les cartes */
+.genre-card i {
+  font-size: 50px;
+  color: #000000;
+  transition: color 0.3s ease;
+  max-width: 100%; /* Empêche l'icône de dépasser son conteneur */
+  height: auto;
+}
+
+/* Effet de survol : changer la couleur du fond et des icônes */
+.genre-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #0d1dff; /* Fond rouge tomate au survol */
+  color: #fff; /* Texte blanc au survol */
+}
+/* Assurer la réactivité des colonnes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-12,
+.col-sm-6,
+.col-md-6,
+.col-lg-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espacement entre les cartes */
+}
