@@ -7,18 +7,38 @@ h1{
     text-align: center;
 }
 
- .card{
-    display: inline-block;
-    margin-left: 20px;
+.container-fluid{
     text-align: center;
-    
+    margin-top: 15px;
 } 
+
+.card{
+    margin-left: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translate(10px, 10px)
+}
 
 .card > img{
     height: 25rem;
-    object-fit: cover;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s ;
 }
 
-#row1{
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+      
+          

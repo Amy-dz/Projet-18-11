@@ -8,45 +8,341 @@
     <link rel="stylesheet" href="../../assets/vendor/slick-carousel/slick/slick.css">
      <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../CSS/listefilms.js">
     <link rel="stylesheet" href="../CSS/listefilms.css">
     <link rel="icon" type="image/x-icon" href="/./Projet-18-11/img/detail_films/favicon.ico"><link/>
 </head>
 <body>
-    <h1>Films en Streaming Illimité sur CinéFlix</h1>
+    <h1>Films</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-<section id="row1">
-    <div class="card" style="width: 16rem;">
-        <img src="../img/listefilms/acontresens2.jpg" class="card-img-top" alt="A contre sens 2">
-        <div class="card-body">
-          <h5 class="card-title">A contre sens 2</h5>
-          <a href="#" class="btn btn-primary">More details...</a>
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/listefilms/ordinalscale.jpg" class="d-block w-100" style="height: 30rem;" alt="lien bande annonce ordinale scale">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/listefilms/oppenheimer.jpg" class="d-block w-100" style="height: 30rem;" alt="lien bande annonce oppenheimer">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/listefilms/hallowen_ends.jpg" class="d-block w-100" style="height: 30rem;" alt="lien bande annonce hallowen ends">
         </div>
       </div>
-      <div class="card" style="width: 16rem;">
-        <img src="../img/listefilms/alien.jpg" class="card-img-top" alt="Alien: Romulus">
-        <div class="card-body">
-          <h5 class="card-title">Alien: Romulus</h5>
-          <a href="#" class="btn btn-primary">More details...</a>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="filters mb-3" style="margin-top: 10px;margin-bottom: 5px;">
+      <label for="sortBy">Sort By: </label>
+      <select id="sortBy" class="form-select w-auto d-inline-block">
+          <option value="date">Date</option>
+          <option value="genre">Genre</option>
+      </select>
+      <label for="genreFilter">Filter by Genre: </label>
+      <select id="genreFilter" class="form-select w-auto d-inline-block">
+          <option value="">All Genres</option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+          <option value="Romance">Romance</option>
+          <option value="Science-fiction">Science-fiction</option>
+          <option value="Horreur">Epouvante-Horreur</option>
+      </select>
+  </div>
+
+  <div id="filmList" class="films">
+    <div class="container-fluid">
+        <div class="row" id="filmRow">
+            <!-- Example movie cards -->
+            <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-12-27" data-genre="Drama,Romance">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/listefilms/acontresens2.jpg" class="card-img-top" alt="A contre sens 2">
+                    <div class="card-body">
+                        <h5 class="card-title">A contre sens 2</h5>
+                        <a href="#" class="btn btn-primary">More details...</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-06-05" data-genre="Action">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/listefilms/badboys.jpg" class="card-img-top" alt="Bad Boys 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bad Boys: Ride or Die</h5>
+                        <a href="#" class="btn btn-primary">More details...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-08-14" data-genre="Science-fiction">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/listefilms/alien.jpg" class="card-img-top" alt="Alien: Romulus">
+                    <div class="card-body">
+                        <h5 class="card-title">Alien: Romulus</h5>
+                        <a href="#" class="btn btn-primary">More details...</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-3 film" data-date="2011-07-06" data-genre="Drama,Romance">
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/listefilms/sortilege.jpg" class="card-img-top" alt="Sortilège">
+                    <div class="card-body">
+                        <h5 class="card-title">Sortilège</h5>
+                        <a href="#" class="btn btn-primary">More details...</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more film cards as needed -->
+        </div> <!-- End of row -->
+    </div> <!-- End of container-fluid 1 -->
+
+    <div class="container-fluid">
+      <div class="row" id="filmRow">
+          <!-- Example movie cards -->
+          <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-11-13" data-genre="Drama,Action">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/listefilms/gladiator2.jpg" class="card-img-top" alt="Gladiator2">
+                  <div class="card-body">
+                      <h5 class="card-title">Gladiator 2</h5>
+                      <a href="#" class="btn btn-primary">More details...</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-3 film" data-date="1980-11-16" data-genre="Epouvante-Horreur">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/listefilms/the_shining.jpg" class="card-img-top" alt="The shining">
+                  <div class="card-body">
+                      <h5 class="card-title">The shining</h5>
+                      <a href="#" class="btn btn-primary">More details...</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 film" data-date="2016-08-17" data-genre="Action,Epouvante-Horreur">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/listefilms/train_pour_busan.jpg" class="card-img-top" alt="Train to Busan">
+                  <div class="card-body">
+                      <h5 class="card-title">Train to Busan</h5>
+                      <a href="#" class="btn btn-primary">More details...</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-10-15" data-genre="Action,Science-fiction">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/listefilms/the_labyrinthe.jpg" class="card-img-top" alt="labyrinthe">
+                  <div class="card-body">
+                      <h5 class="card-title">le labyrinthe</h5>
+                      <a href="#" class="btn btn-primary">More details...</a>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Add more film cards as needed -->
+      </div> <!-- End of row -->
+  </div> <!-- End of container-fluid 2 -->
+
+  <div class="container-fluid">
+    <div class="row" id="filmRow">
+        <!-- Example movie cards -->
+        <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-10-29" data-genre="Action">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/listefilms/john_wick.jpg" class="card-img-top" alt="John wick">
+                <div class="card-body">
+                    <h5 class="card-title">John Wick</h5>
+                    <a href="#" class="btn btn-primary">More details...</a>
+                </div>
+            </div>
         </div>
+        
+        <div class="col-12 col-sm-6 col-md-3 film" data-date="2013-11-06" data-genre="Action,Science-fiction">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/listefilms/strategie_ender.jpg" class="card-img-top" alt="strategie_ender">
+                <div class="card-body">
+                    <h5 class="card-title">La Strategie Ender</h5>
+                    <a href="#" class="btn btn-primary">More details...</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-10-09" data-genre="Epouvante-Horreur">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/listefilms/terrifier3.jpg" class="card-img-top" alt="Terrifier 3">
+                <div class="card-body">
+                    <h5 class="card-title">Terrifier 3</h5>
+                    <a href="#" class="btn btn-primary">More details...</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-04-24" data-genre="Drame,Romance">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/listefilms/challengers.jpg" class="card-img-top" alt="Challengers">
+                <div class="card-body">
+                    <h5 class="card-title">Challengers</h5>
+                    <a href="#" class="btn btn-primary">More details...</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more film cards as needed -->
+    </div> <!-- End of row -->
+</div> <!-- End of container-fluid 3 -->
+
+<div class="container-fluid">
+  <div class="row" id="filmRow">
+      <!-- Example movie cards -->
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-10-29" data-genre="Action">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/john_wick.jpg" class="card-img-top" alt="John wick">
+              <div class="card-body">
+                  <h5 class="card-title">John Wick</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
       </div>
-      <div class="card" style="width: 16rem;">
-        <img src="../img/listefilms/badboys.jpg" class="card-img-top" alt="Bad boys 4">
-        <div class="card-body">
-          <h5 class="card-title">Bad Boys : Ride or Die</h5>
-          <a href="#" class="btn btn-primary">More details...</a>
-        </div>
+      
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2013-11-06" data-genre="Action,Science-fiction">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/strategie_ender.jpg" class="card-img-top" alt="strategie_ender">
+              <div class="card-body">
+                  <h5 class="card-title">La Strategie Ender</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
       </div>
-      <div class="card" style="width: 16rem;">
-        <img src="../img/listefilms/sortilège.jpg" class="card-img-top" alt="Sortilège">
-        <div class="card-body">
-          <h5 class="card-title">Sortilège</h5>
-          <a href="#" class="btn btn-primary">More details...</a>
-        </div>
-      </div> 
-      </section>
+
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-10-09" data-genre="Epouvante-Horreur">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/terrifier3.jpg" class="card-img-top" alt="Terrifier 3">
+              <div class="card-body">
+                  <h5 class="card-title">Terrifier 3</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-04-24" data-genre="Drame,Romance">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/challengers.jpg" class="card-img-top" alt="Challengers">
+              <div class="card-body">
+                  <h5 class="card-title">Challengers</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Add more film cards as needed -->
+  </div> <!-- End of row -->
+</div> <!-- End of container-fluid 4 -->
+
+<div class="container-fluid">
+  <div class="row" id="filmRow">
+      <!-- Example movie cards -->
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-10-29" data-genre="Action">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/john_wick.jpg" class="card-img-top" alt="John wick">
+              <div class="card-body">
+                  <h5 class="card-title">John Wick</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2013-11-06" data-genre="Action,Science-fiction">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/strategie_ender.jpg" class="card-img-top" alt="strategie_ender">
+              <div class="card-body">
+                  <h5 class="card-title">La Strategie Ender</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2024-10-09" data-genre="Epouvante-Horreur">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/terrifier3.jpg" class="card-img-top" alt="Terrifier 3">
+              <div class="card-body">
+                  <h5 class="card-title">Terrifier 3</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-12 col-sm-6 col-md-3 film" data-date="2014-04-24" data-genre="Drame,Romance">
+          <div class="card" style="width: 18rem;">
+              <img src="../img/listefilms/challengers.jpg" class="card-img-top" alt="Challengers">
+              <div class="card-body">
+                  <h5 class="card-title">Challengers</h5>
+                  <a href="#" class="btn btn-primary">More details...</a>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Add more film cards as needed -->
+  </div> <!-- End of row -->
+</div> <!-- End of container-fluid 5 -->
+</div> <!-- end of film list -->
+
+<script>
+  // Select the filter and sort elements
+  const sortBySelect = document.getElementById("sortBy");
+  const genreFilterSelect = document.getElementById("genreFilter");
+  const filmRow = document.getElementById("filmRow");
+
+  // Filter function
+  function filterAndSortFilms() {
+      const selectedGenre = genreFilterSelect.value.toLowerCase();
+      const sortBy = sortBySelect.value;
+      const films = document.querySelectorAll(".film");
+
+      // Filter films by genre
+      films.forEach(film => {
+          const filmGenre = film.getAttribute("data-genre").toLowerCase();
+          const filmDate = film.getAttribute("data-date");
+
+          if (selectedGenre === "" || filmGenre.includes(selectedGenre)) {
+              film.style.display = "block";  // Show the film
+          } else {
+              film.style.display = "none";  // Hide the film
+          }
+      });
+
+      // Sort films based on selected option
+      const sortedFilms = Array.from(films).sort((a, b) => {
+          if (sortBy === "date") {
+              return new Date(a.getAttribute("data-date")) - new Date(b.getAttribute("data-date"));
+          } else if (sortBy === "genre") {
+              return a.getAttribute("data-genre").localeCompare(b.getAttribute("data-genre"));
+          }
+      });
+
+      // Clear and append sorted films
+      sortedFilms.forEach(film => {
+          filmRow.appendChild(film);
+      });
+  }
+
+  // Event listeners to trigger filtering and sorting
+  sortBySelect.addEventListener("change", filterAndSortFilms);
+  genreFilterSelect.addEventListener("change", filterAndSortFilms);
+
+  // Call the function initially to set the correct order and filter
+  filterAndSortFilms();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
