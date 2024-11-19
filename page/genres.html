@@ -113,7 +113,6 @@
     <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------- MAIN ----------------------------------------------------------------------->
     <main>
-      <div class="container">
         <br />
         <br />
         <br />
@@ -121,6 +120,7 @@
         <br />
         <h1 class="text-center">Genres</h1>
         <br />
+        <div class="container">
         <div class="row">
           <!-- Genre Action -->
           <div
@@ -176,50 +176,54 @@
           </div>
         </div>
       </div>
+    </div>
     
         <!-- Grille de Films par Genre -->
     <!-- Genre Action - Films -->
-    <section id="action-films">
-      <h2 class="text-center text-white">Films Action</h2>
-      <div class="row">
-        <!-- Film 1 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
-          <div class="card">
-            <img src="../img/listefilms/gladiator2.jpg" class="card-img-top img-fluid" alt="Action Film 1">
-            <div class="card-body">
-              <h5 class="card-title">Gladiateur 2</h5>
+    <div class="container">
+      <!-- Grille de films - Genre Action -->
+      <section id="action-films">
+        <h2 class="text-center text-white">Films Action</h2>
+        <div class="row">
+          <!-- Film 1 -->
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="../img/listefilms/gladiator2.jpg" class="card-img-top img-fluid" alt="Action Film 1">
+              <div class="card-body">
+                <h5 class="card-title">Gladiator 2</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Film 2 -->
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <img src="../img/listefilms/badboys.jpg" class="card-img-top img-fluid" alt="Action Film 2">
+              <div class="card-body">
+                <h5 class="card-title">Bad Boys 4</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Film 3 -->
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <img src="../img/listefilms/john_wick.jpg" class="card-img-top img-fluid" alt="Action Film 3">
+              <div class="card-body">
+                <h5 class="card-title">John Wick</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Film 4 -->
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <img src="../img/listefilms/train_pour_busan.jpg" class="card-img-top img-fluid" alt="Action Film 4">
+              <div class="card-body">
+                <h5 class="card-title">Train pour Busan</h5>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Film 2 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
-          <div class="card">
-            <img src="../img/listefilms/badboys.jpg" class="card-img-top img-fluid" alt="Action Film 2">
-            <div class="card-body">
-              <h5 class="card-title">Bad Boys 4</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Film 3 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
-          <div class="card">
-            <img src="../img/listefilms/john_wick.jpg" class="card-img-top img-fluid" alt="Action Film 3">
-            <div class="card-body">
-              <h5 class="card-title">Action Film 3</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Film 4 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
-          <div class="card">
-            <img src="../img/listefilms/train_pour_busan.jpg" class="card-img-top img-fluid" alt="Action Film 4">
-            <div class="card-body">
-              <h5 class="card-title">Action Film 4</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+  
   
 
     <!-- Genre Science-Fiction - Films -->
@@ -296,6 +300,7 @@
             </div>
           </div>
         </div>
+      </div>
         <!-- Film-->
     </main>
     <!-------------------------------------------------------------------------------- FIN MAIN ----------------------------------------------------------------------->
