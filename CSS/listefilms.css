@@ -7,11 +7,18 @@ h1{
     text-align: center;
 }
 
-#row1{
-    display: block;
+ .card{
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+    
+} 
+
+.card > img{
+    height: 25rem;
+    object-fit: cover;
 }
 
-.card, .card2{
-    display: inline-block;
-    background-color: white;
+#row1{
+    text-align: center;
 }
