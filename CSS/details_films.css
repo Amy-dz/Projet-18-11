@@ -73,7 +73,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+}   
 
 .navbar-nav {
   margin-left: auto; /* Aligne les liens du menu à droite */
@@ -121,7 +121,7 @@ body {
 .container{
   margin: 0;
   padding: 0;
-  color: wheat;
+  color: white;
   
 }
 
