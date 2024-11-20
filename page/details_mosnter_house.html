@@ -28,10 +28,10 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/Projet-18-11/img/detail_films/favicon.ico"
+      href="../img/detail_films/favicon.ico"
     />
     <!-- Titre de la page qui s'affiche dans le partage -->
-    <meta property="og:title" content="Détails des films" />
+    <meta property="og:title" content="Détail du film Monster House" />
 
     <!-- Type de contenu (ex: article, website) -->
     <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@
     <meta property="og:image" content="" />
 
     <!-- Description de la page -->
-    <meta property="og:description" content="Page des détails des films" />
+    <meta property="og:description" content="Page détails du film Monster House" />
 
     <!-- Nom du site (facultatif, souvent le nom de ton site) -->
     <meta property="og:site_name" content="CinéFlix" />
@@ -59,77 +59,72 @@
     <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">CinéFlix</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./listefilms.html"
-                >Liste des films</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Genres
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./genres.html">Action</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./genres.html"
-                    >Science-Fiction</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./genres.html">Horreur</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./genres.html">Romance</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./pagenouveaute.html"
-                >Nouveautés</a
-              >
-            </li>
-          </ul>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">CinéFlix</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="listefilms.html"
+                  >Liste des films</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genres
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../page/genres.html#action">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../page/genres.html#sci-fi"
+                      >Science-Fiction</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../page/genres.html#horror">Horreur</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../page/genres.html#romance">Romance</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pagenouveaute.html"
+                  >Nouveautés</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
@@ -137,16 +132,16 @@
     <main>
       <section>
         <img
-          src="../img/listefilms/ordinalscale.jpg"
+          src="../img/detail_films/monster_house.jpeg"
           class="img-fluid"
-          alt="Affiche Swort Art Online"
+          alt="Affiche Monster House"
         />
         <!--------------------------------affiche en paysage------------------------------------------------>
 
         <div class="container text-left">
           <div class="row">
             <div class="col">
-              <h1 class="titrefilms">Sword Art Online</h1>
+              <h1 class="titrefilms">Monster House</h1>
             </div>
           </div>
         </div>
@@ -221,7 +216,7 @@
             <ul class="list-unstyled">
               <li>
                 <a
-                  href="./index.html"
+                  href="../index.html"
                   class="footer-link animate__animated animate__fadeIn"
                   >Accueil</a
                 >
@@ -293,14 +288,14 @@
             <ul class="list-unstyled">
               <li>
                 <a
-                  href="#"
+                  href="mentionslegales.html"
                   class="footer-link animate__animated animate__fadeIn"
                   >Mentions légales</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="politiquedeco.html"
                   class="footer-link animate__animated animate__fadeIn"
                   >Politique de confidentialité</a
                 >
