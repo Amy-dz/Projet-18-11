@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
     <link rel="stylesheet" href="../CSS/pagenouveaute.css" />
     
 </head>
@@ -15,7 +23,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">CinéFlix</a>
+        <a class="navbar-brand" href="../index.html">CinéFlix</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -30,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active" aria-current="page" href="../index.html"
                 >Accueil</a
               >
             </li>
@@ -38,7 +46,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="page/listefilms.html"
+                href="listefilms.html"
                 >Liste des films</a
               >
             </li>
@@ -54,7 +62,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="page/genres.html">Action</a>
+                  <a class="dropdown-item" href="genres.html">Action</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="page/genres.html"
@@ -96,28 +104,28 @@
           title: "John Wick",
           releaseDate: "2024-11-23",
           popularity: 8,
-          image: "image/johnwick.jpg",
+          image: "../img/pagenouveaute/johnwick.jpg",
           genre: "Action, Aventure"
         },
         {
           title: "La stratégie ender",
           releaseDate: "2024-10-03",
           popularity: 9,
-          image: "image/stratender.webp",
+          image: "../img/pagenouveaute/stratender.jpg",
           genre: "Science-Fiction"
         },
         {
           title: "Terrifier 3",
           releaseDate: "2024-03-26",
           popularity: 6,
-          image: "image/terrifier.webp",
+          image: "../img/pagenouveaute/terrifier.jpg",
           genre: "Horreur"
         },
         {
           title: "Challengers",
           releaseDate: "2024-09-16",
           popularity: 7,
-          image: "image/challengers.jpg",
+          image: "../img/pagenouveaute/challengers.jpg",
           genre: "Romance"
         }
       ];
@@ -148,30 +156,31 @@
       function trierParDate(films) {
         return films.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
       }
-    
-      // Trier les films par popularité
-      function trierParPopularite(films) {
-        return films.sort((a, b) => b.popularity - a.popularity);
-      }
-    
-      // Gestionnaire d'événements pour le sélecteur de tri
-      const sortOptions = document.getElementById('sortOptions');
-      sortOptions.addEventListener('change', (e) => {
-        const sortBy = e.target.value;
-        let sortedFilms;
-    
-        if (sortBy === "date") {
-          sortedFilms = trierParDate(films);
-        } else if (sortBy === "popularity") {
-          sortedFilms = trierParPopularite(films);
+      function trierParDate(films) {
+            return films.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
         }
-    
-        afficherFilms(sortedFilms); // Afficher les films triés
-      });
-    
-      // Afficher les films au chargement initial
-      afficherFilms(films);
+
+        function trierParPopularite(films) {
+            return films.sort((a, b) => b.popularity - a.popularity);
+        }
+
+        const sortOptions = document.getElementById('sortOptions');
+        sortOptions.addEventListener('change', (e) => {
+            const sortBy = e.target.value;
+            let sortedFilms;
+
+            if (sortBy === "date col-12") {
+                sortedFilms = trierParDate(films);
+            } else if (sortBy === "popularity") {
+                sortedFilms = trierParPopularite(films);
+            }
+
+            afficherFilms(sortedFilms);
+        });
+
+        afficherFilms(films);
     </script>
+
     
 
     <!-- Grille de films -->
@@ -180,7 +189,7 @@
             <!-- Cartes de films -->
             <div class="col movie-card" style="animation-delay: 0.2s">
                 <div class="card h-100">
-                    <img src="image/johnwick.jpg" class="card-img-top" alt="Affiche du film">
+                    <img src="../img/pagenouveaute/johnwick.jpg" class="card-img-top" alt="caca"/>
                     <div class="card-body">
                         <h5 class="card-title">John Wick</h5>
                         <p class="card-text"><strong>Date de sortie :</strong> 2024-11-23</p>
@@ -191,7 +200,7 @@
 
             <div class="col movie-card" style="animation-delay: 0.4s">
                 <div class="card h-100">
-                    <img src="../img/pagenouveaute/stratender.jpg" class="card-img-top" alt="Affiche du film">
+                    <img src="../img/pagenouveaute/stratender.jpg" class="card-img-top" alt="Affiche du film"/>
                     <div class="card-body">
                         <h5 class="card-title">La stratégie Ender </h5>
                         <p class="card-text"><strong>Date de sortie :</strong> 2024-11-15</p>
@@ -202,7 +211,7 @@
 
             <div class="col movie-card" style="animation-delay: 0.6s">
                 <div class="card h-100">
-                    <img src="../img/pagenouveaute/terrifier.jpg" class="card-img-top" alt="Affiche du film">
+                    <img src="../img/pagenouveaute/terrifier.jpg" class="card-img-top" alt="Affiche du film"/>
                     <div class="card-body">
                         <h5 class="card-title">Terrifier 3</h5>
                         <p class="card-text"><strong>Date de sortie :</strong> 2024-11-20</p>
