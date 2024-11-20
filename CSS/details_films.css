@@ -131,9 +131,14 @@ body {
   margin-bottom: auto;
 }
 
-.fade-up{
-  color: white;
+
+/*css déroulant*/
+.deroulement {
+  color:white!important;
+
 }
+
+
 
 [data-aos] {
   opacity: 1 !important;

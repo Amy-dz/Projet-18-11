@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.cine-flix.fr/schemas/sitemap/0.9">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://www.cine-flix.fr/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- Page liste des films -->
+  <url>
+    <loc>https://www.cine-flix.fr/liste-de-films</loc>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+ <!-- Page Genres-->
+  <url>
+    <loc>https://www.cine-flix.fr/genres</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+ <!-- Page Nouveautés -->
+  <url>
+    <loc>https://www.cine-flix.fr/nouveautes</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Politique de confidentialité -->
+  <url>
+    <loc>https://www.cine-flix.fr/</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://www.cine-flix.fr/ </loc>
+    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
