@@ -10,12 +10,20 @@
       crossorigin="anonymous"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="/Projet-18-11/CSS/details_films.css" />
     <link
       rel="icon"
       type="image/x-icon"
       href="/./Projet-18-11/img/detail_films/favicon.ico"
+    />
+    <!-- LIENS VERS LES ICONES RESEAUX SOCIAUX -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
     <!-- Titre de la page qui s'affiche dans le partage -->
     <meta property="og:title" content="Détails des films" />
@@ -43,67 +51,79 @@
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
     <!-- Example Code -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">CinéFlix</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <!-- <li><hr class="dropdown-divider" /></li> -->
-                <!-- <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li> -->
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">CinéFlix</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="page/listefilms.html"
+                  >Liste des films</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genres
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="page/genres.html">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="page/genres.html"
+                      >Science-Fiction</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="page/genres.html">Horreur</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="page/genres.html">Romance</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Nouveautés</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+      <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+      <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+    </header>
     <main>
       <section>
         <img
@@ -125,10 +145,10 @@
 
       <section>
         <div class="container-fluid deroulement">
-          <div class="row row-gap-5" style="padding-bottom: 10vh" >
+          <div class="row" style="padding-bottom: 10vh; row-gap: 8rem">
             <div
-              class="col-12 col-sm-6 col-md-6 align-self-start"
-              data-aos="zoom-in"
+              class="col-12 col-sm-6 col-md-12 align-self-start"
+              data-aos="fade-up"
             >
               <h2 class="text-center">Synopsis</h2>
               <p>
@@ -140,7 +160,7 @@
             </div>
             <div
               class="col-12 col-sm-6 col-md-6 align-self-center"
-              data-aos="zoom-in"
+              data-aos="fade-up"
             >
               <h2 class="text-center">Acteurs</h2>
               <p>
@@ -152,7 +172,7 @@
             </div>
             <div
               class="col-12 col-sm-6 col-md-6 align-self-end"
-              data-aos="zoom-in"
+              data-aos="fade-up"
             >
               <h2 class="text-center">Durée</h2>
               <p>
@@ -162,7 +182,7 @@
                 eum inventore ea amet?
               </p>
             </div>
-            <div class="col-12 col-sm-6 col-md-6" data-aos="zoom-in">
+            <div class="col-12 col-sm-6 col-md-12" data-aos="fade-up">
               <h2 class="text-center">Genre</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -181,8 +201,9 @@
       <!---------------- ... et en défilement---------------------------------------->
     </main>
 
+    <!-------------------------------------------------------- FOOTERRR ------------------------------------------------------------------------->
     <footer class="bg-dark text-white py-4">
-      <div class="container">
+      <div class="containerf">
         <div class="row">
           <!-- Colonne 1 : Pages principales -->
           <div class="col-sm-6 col-md-3 mb-3">
@@ -283,6 +304,10 @@
         </div>
       </div>
     </footer>
+    <!-------------------------------------------------------- FINNNNN     FOOTERRR ------------------------------------------------------------------------->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -290,11 +315,8 @@
     ></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
-      $(document).ready(function () {
-        AOS.init();
-      });
+      AOS.init();
     </script>
   </body>
 </html>
