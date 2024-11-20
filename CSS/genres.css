@@ -106,6 +106,7 @@ body {
 
 h1 {
   color: white;
+  padding-top: 130px;
 }
 
 .blabla a {
@@ -199,6 +200,7 @@ h1 {
 .container h2 {
   color: #ffffff;
 }
+
 /* Assurez-vous que les cartes ne débordent pas */
 .movie-genre-card {
   background-color: #ffffff;
@@ -222,16 +224,7 @@ h1 {
 }
 
 .row {
-  padding-top: 20px;
-}
-
-/* Icônes dans les cartes */
-.movie-genre-card i {
-  font-size: 50px;
-  color: #000000;
-  transition: color 0.3s ease;
-  max-width: 100%;
-  height: auto;
+  padding-top: 50px;
 }
 
 /* Titres des genres */
@@ -244,7 +237,7 @@ h1 {
 }
 
 .movie-genre-card:hover h5 {
-  color: white;
+  color: #ffffff;
 }
 
 /* Modifier la couleur du texte des descriptions */
@@ -264,10 +257,6 @@ h1 {
   transform: translateY(-10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   background-color: #6a91a1;
-}
-
-.movie-genre-card:hover i {
-  color: #ffffff;
 }
 
 /*************************************************************************** FIN BODY ***************************************************************************/
