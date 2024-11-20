@@ -113,28 +113,27 @@
     <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------- MAIN ----------------------------------------------------------------------->
     <main>
-      <div class="container">
         <br />
         <br />
         <br />
         <br />
         <br />
         <h1 class="text-center">Genres</h1>
-        <br />
+        <div class="container">
         <div class="row">
           <!-- Genre Action -->
-          <div
+         <div
             class="col-12 col-sm-6 col-md-6 col-lg-3 blabla"
             data-aos="fade-right"
             data-aos-delay="100"
           >
-            <div class="card genre-card">
+          <a href="#action"><div class="card genre-card">
               <i class="fa-solid fa-bolt fa-flip"></i>
               <h5>Action</h5>
               <p>
                 Films pleins d'action, de courses-poursuites et d'aventures.
               </p>
-            </div>
+            </div></a>
           </div>
           <!-- Genre Science-fiction -->
           <div
@@ -142,13 +141,13 @@
             data-aos="fade-down"
             data-aos-delay="400"
           >
-            <div class="card genre-card">
+          <a href="#sci-fi"><div class="card genre-card">
               <i class="fa-solid fa-rocket fa-spin fa-spin-reverse"></i>
               <h5>Science-Fiction</h5>
               <p>
                 Films qui explorent les possibilités futuristes et l'univers.
               </p>
-            </div>
+            </div></a>
           </div>
           <!-- Genre Horreur -->
           <div
@@ -156,11 +155,11 @@
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <div class="card genre-card">
+            <a href="#horreur"><div class="card genre-card">
               <i class="fa-solid fa-ghost fa-fade"></i>
               <h5>Horreur</h5>
               <p>Films effrayants qui explorent les peurs et les frissons.</p>
-            </div>
+            </div></a>
           </div>
           <!-- Genre Romance -->
           <div
@@ -176,23 +175,25 @@
           </div>
         </div>
       </div>
+    </div>
     
         <!-- Grille de Films par Genre -->
-    <!-- Genre Action - Films -->
-    <section id="action-films">
-      <h2 class="text-center text-white">Films Action</h2>
+   <!-- Container principal pour les genres -->
+  <div class="container">
+    
+    <!-- Section Genre Action -->
+    <section id="action" class="genre-section" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-center" data-aos="zoom-in-up">ACTION</h2>
       <div class="row">
-        <!-- Film 1 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="100">
           <div class="card">
             <img src="../img/listefilms/gladiator2.jpg" class="card-img-top img-fluid" alt="Action Film 1">
             <div class="card-body">
-              <h5 class="card-title">Gladiateur 2</h5>
+              <h5 class="card-title">Gladiator 2</h5>
             </div>
           </div>
         </div>
-        <!-- Film 2 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="200">
           <div class="card">
             <img src="../img/listefilms/badboys.jpg" class="card-img-top img-fluid" alt="Action Film 2">
             <div class="card-body">
@@ -200,102 +201,182 @@
             </div>
           </div>
         </div>
-        <!-- Film 3 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="300">
           <div class="card">
             <img src="../img/listefilms/john_wick.jpg" class="card-img-top img-fluid" alt="Action Film 3">
             <div class="card-body">
-              <h5 class="card-title">Action Film 3</h5>
+              <h5 class="card-title">John Wick</h5>
             </div>
           </div>
         </div>
-        <!-- Film 4 Action -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="400">
           <div class="card">
             <img src="../img/listefilms/train_pour_busan.jpg" class="card-img-top img-fluid" alt="Action Film 4">
             <div class="card-body">
-              <h5 class="card-title">Action Film 4</h5>
+              <h5 class="card-title">Train pour Busan</h5>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  
-
-    <!-- Genre Science-Fiction - Films -->
-    <section id="sci-fi-films">
-      <h2 class="text-center text-white">Films Science-Fiction</h2>
-      <div class="row">
-        <!-- Film 1 Science-Fiction -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="300">
           <div class="card">
-            <img src="../img/listefilms/" class="card-img-top img-fluid" alt="Sci-Fi Film 1">
+            <img src="../img/listefilms/killbill.jpg" class="card-img-top img-fluid" alt="Action Film 3">
             <div class="card-body">
-              <h5 class="card-title">Sci-Fi Film 1</h5>
+              <h5 class="card-title">Kill Bill</h5>
             </div>
           </div>
         </div>
-        <!-- Film 2 Science-Fiction -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="300">
           <div class="card">
-            <img src="https://via.placeholder.com/300x450?text=Sci-Fi+Film+2" class="card-img-top img-fluid" alt="Sci-Fi Film 2">
+            <img src="../img/listefilms/leon.jpg" class="card-img-top img-fluid" alt="Action Film 3">
             <div class="card-body">
-              <h5 class="card-title">Sci-Fi Film 2</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Film 3 Science-Fiction -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x450?text=Sci-Fi+Film+3" class="card-img-top img-fluid" alt="Sci-Fi Film 3">
-            <div class="card-body">
-              <h5 class="card-title">Sci-Fi Film 3</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Film 4 Science-Fiction -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x450?text=Sci-Fi+Film+4" class="card-img-top img-fluid" alt="Sci-Fi Film 4">
-            <div class="card-body">
-              <h5 class="card-title">Sci-Fi Film 4</h5>
+              <h5 class="card-title">Léon</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Genre Horreur - Films -->
-    <section id="horror-films">
-      <h2 class="text-center text-white">Films Horreur</h2>
+    <!-- Section Genre Science-Fiction -->
+    <section id="sci-fi" class="genre-section" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-center" data-aos="zoom-in-up">SCIENCE-FICTION</h2>
       <div class="row">
-        <!-- Film 1 Horreur -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="100">
           <div class="card">
-            <img src="https://via.placeholder.com/300x450?text=Horror+Film+1" class="card-img-top img-fluid" alt="Horror Film 1">
+            <img src="../img/listefilms/interstellar.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 1">
             <div class="card-body">
-              <h5 class="card-title">Horror Film 1</h5>
+              <h5 class="card-title">Interstellar</h5>
             </div>
           </div>
         </div>
-        <!-- Film 2 Horreur -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="200">
           <div class="card">
-            <img src="https://via.placeholder.com/300x450?text=Horror+Film+2" class="card-img-top img-fluid" alt="Horror Film 2">
+            <img src="../img/listefilms/strategie_ender.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 2">
             <div class="card-body">
-              <h5 class="card-title">Horror Film 2</h5>
+              <h5 class="card-title">Stratégie Ender</h5>
             </div>
           </div>
         </div>
-        <!-- Film 3 Horreur -->
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-card">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="300">
           <div class="card">
-            <img src="https://via.placeholder.com/300x450?text=Horror+Film+3" class="card-img-top img-fluid" alt="Horror Film 3">
+            <img src="../img/listefilms/matrix.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 3">
             <div class="card-body">
-              <h5 class="card-title">Horror Film 3</h5>
+              <h5 class="card-title">Matrix</h5>
             </div>
           </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card">
+            <img src="../img/listefilms/the_labyrinthe.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 4">
+            <div class="card-body">
+              <h5 class="card-title">Le Labyrinthe</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Genre Horreur -->
+    <section id="horror" class="genre-section" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-center" data-aos="zoom-in-up">HORREUR</h2>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card">
+            <img src="../img/listefilms/alien.jpg" class="card-img-top img-fluid" alt="Horror Film 1">
+            <div class="card-body">
+              <h5 class="card-title">Alien</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="card">
+            <img src="../img/listefilms/terrifier3.jpg" class="card-img-top img-fluid" alt="Horror Film 1">
+            <div class="card-body">
+              <h5 class="card-title">Terrifier 3</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="card">
+            <img src="../img/listefilms/the_shining.jpg" class="card-img-top img-fluid" alt="Horror Film 3">
+            <div class="card-body">
+              <h5 class="card-title">Shining</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="card">
+            <img src="../img/listefilms/the_ring.jpg" class="card-img-top img-fluid" alt="Horror Film 4">
+            <div class="card-body">
+              <h5 class="card-title">The Ring</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="card">
+            <img src="../img/listefilms/monsterhouse.jpg" class="card-img-top img-fluid" alt="Horror Film 4">
+            <div class="card-body">
+              <h5 class="card-title">Monster House</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card">
+            <img src="../img/listefilms/hallowen_ends.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 4">
+            <div class="card-body">
+              <h5 class="card-title">Halloween Ends</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Section Genre Romance -->
+     <section id="sci-fi" class="genre-section" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-center" data-aos="zoom-in-up">ROMANCE</h2>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card">
+            <img src="../img/listefilms/acontresens2.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 1">
+            <div class="card-body">
+              <h5 class="card-title">À Contre-Sens 2</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card">
+            <img src="../img/listefilms/challengers.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 2">
+            <div class="card-body">
+              <h5 class="card-title">Challengers</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card">
+            <img src="../img/listefilms/empire_of_light.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 3">
+            <div class="card-body">
+              <h5 class="card-title">Empire of Light</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card">
+            <img src="../img/listefilms/the_notebook.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 4">
+            <div class="card-body">
+              <h5 class="card-title">The Notebook</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 movie-genre-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card">
+            <img src="../img/listefilms/sortilege.jpg" class="card-img-top img-fluid" alt="Sci-Fi Film 4">
+            <div class="card-body">
+              <h5 class="card-title">Sortilège</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div> <!-- /.container -->
         <!-- Film-->
     </main>
     <!-------------------------------------------------------------------------------- FIN MAIN ----------------------------------------------------------------------->
