@@ -9,8 +9,6 @@
      <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../CSS/listefilms.js">
-    <link rel="stylesheet" href="../CSS/listefilms.css">
     <link rel="icon" type="image/x-icon" href="/./Projet-18-11/img/detail_films/favicon.ico"><link/>
  <!-- LIENS VERS ANIMATE CSS -->
  <link
@@ -22,8 +20,8 @@
  rel="stylesheet"
  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
 />
-<link rel="stylesheet" href="style.css" />
-<link rel="icon" type="image/x-icon" href="img/detail_films/favicon.ico" />
+<link rel="stylesheet" href="../CSS/listefilms.css">
+<link rel="icon" type="image/x-icon" href="../img/detail_films/favicon.ico" />
 
 <!-- Titre de la page qui s'affiche dans le partage -->
 <meta property="og:title" content="Accueil" />
@@ -48,84 +46,83 @@
 <meta name="description" content="" />
 
 </head>
-<body>
-
-<!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
-    <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
-    <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">CinéFlix</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Accueil</a
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------- Navbar ----------------------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">CinéFlix</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >Accueil</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="listefilms.html"
+              >Liste des films</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+            Genres
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="genres.html">Action</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="genres.html"
+                >Science-Fiction</a
               >
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="page/listefilms.html"
-                >Liste des films</a
-              >
+            <li>
+              <a class="dropdown-item" href="genres.html">Horreur</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Genres
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="page/genres.html">Action</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="page/genres.html"
-                    >Science-Fiction</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="page/genres.html">Horreur</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="page/genres.html">Romance</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Nouveautés</a
-              >
+            <li>
+              <a class="dropdown-item" href="genres.html">Romance</a>
             </li>
           </ul>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="pagenouveaute.html"
+            >Nouveautés</a
+          >
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
-    <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
-    <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+    </div>
+  </nav>
+  <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------- FIN NAVBAR ----------------------------------------------------------------------->
 <main>
-    <h1>Films</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    
+  <h1>Films</h1>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -412,28 +409,28 @@
         <ul class="list-unstyled">
           <li>
             <a
-              href="index.html"
+              href="../index.html"
               class="footer-link animate__animated animate__fadeIn"
               >Accueil</a
             >
           </li>
           <li>
             <a
-              href="page/listefilms.html"
+              href="listefilms.html"
               class="footer-link animate__animated animate__fadeIn"
               >Liste des films</a
             >
           </li>
           <li>
             <a
-              href="page/genres.html"
+              href="genres.html"
               class="footer-link animate__animated animate__fadeIn"
               >Genres</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="pagenouveaute.html"
               class="footer-link animate__animated animate__fadeIn"
               >Nouveautés</a
             >
@@ -465,14 +462,23 @@
       <div class="col-sm-6 col-md-3 mb-3">
         <h5>Suivez-nous</h5>
         <div class="social-icons">
-          <a href="#" class="footer-icon animate__animated animate__flash"
+          <a
+            href="#"
+            class="footer-icon animate__animated animate__flash"
+            target="_blank"
             ><i class="fab fa-facebook-f"></i
           ></a>
-          <a href="#" class="footer-icon animate__animated animate__flash"
+          <a
+            href="https://www.youtube.com/channel/UCDJEfrG3B5vswT9l7QKbulw"
+            class="footer-icon animate__animated animate__flash"
+            target="_blank"
             ><i class="fa-brands fa-youtube"></i
           ></a>
 
-          <a href="#" class="footer-icon animate__animated animate__flash"
+          <a
+            href="https://www.instagram.com/cineflixcinemas/"
+            class="footer-icon animate__animated animate__flash"
+            target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
         </div>
@@ -484,15 +490,17 @@
         <ul class="list-unstyled">
           <li>
             <a
-              href="#"
+              href="mentionslegales.html"
               class="footer-link animate__animated animate__fadeIn"
+              target="_blank"
               >Mentions légales</a
             >
           </li>
           <li>
             <a
-              href="#"
+              href="politiquedeco.html"
               class="footer-link animate__animated animate__fadeIn"
+              target="_blank"
               >Politique de confidentialité</a
             >
           </li>
@@ -505,7 +513,8 @@
     </div>
   </div>
 </footer>
-
+<!-------------------------------------------------------- FINNNNN     FOOTERRR ------------------------------------------------------------------------->
+<!----------------------------------------- Java script option tri----------------------------------------------------------------------->
 <script>
   // Select the filter and sort elements
   const sortBySelect = document.getElementById("sortBy");
@@ -553,7 +562,20 @@
   filterAndSortFilms();
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--------------------------------------fin Java script option tri----------------------------------------------------------------------->
+
+<!-------------------------------------------------------------------------------- JAVASCRIPT ----------------------------------------------------------------------->
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
