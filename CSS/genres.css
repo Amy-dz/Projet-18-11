@@ -1,54 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Pacifico&display=swap");
 html,
 body {
   background-color: rgb(19, 19, 19);
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Geist Mono", monospace;
 }
-/* Assurez-vous que les cartes ne débordent pas */
+
+/*************************************************************************** NAVBAR ***************************************************************************/
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Noir avec transparence */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /*la navbar prend toute la largeur */
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  font-weight: lighter;
+  font-style: normal;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(48, 147, 167, 0.8); /* Effet lumineux */
+  animation: blink 1s infinite; /* Animation clignotante */
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Ligne LED bleu en bas de la navbar */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 242, 255),
+    rgb(38, 82, 92),
+    rgb(22, 73, 109)
+  );
+  background-size: 200% 100%; /* Prépare l'animation */
+  animation: led 2s linear infinite; /* Animation de défilement */
+}
+
+/* Animation pour la ligne LED */
+@keyframes led {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Alignement du texte à droite et du logo à gauche */
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Aligne les liens du menu à droite */
+}
+
+/* Style des éléments du menu */
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Espacement entre les liens */
+}
+
+.navbar-nav .nav-link {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white !important;
+}
+
+.dropdown-item {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navbar-toggler-icon {
+  color: white; /* Par exemple, couleur rouge au survol */
+}
+
+/*************************************************************************** FIN NAVBAR ***************************************************************************/
+/*************************************************************************** BODY ***************************************************************************/
+
+h1 {
+  color: white;
+}
+
+.blabla a {
+  text-decoration: none;
+}
+
+/* --- Styles généraux --- */
+
+/* Container principal pour espacement */
+.container {
+  padding: 60px 15px; /* Un espacement ample pour le container */
+}
+
+/* --- Cartes de genres --- */
+
+/* Style des cartes de genre */
 .genre-card {
   background-color: #ffffff;
-  border: 5px solid #6e6e6e;
+  border: 5px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   text-align: center;
   color: #000000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Empêcher le débordement */
-  overflow: hidden;
-  max-width: 100%; /* S'assure que la carte ne dépasse jamais la largeur de son conteneur */
-  height: auto; /* Laissez la hauteur s'ajuster en fonction du contenu */
+  overflow: hidden; /* Empêcher le débordement */
+  height: auto; /* Ajuste la hauteur en fonction du contenu */
+  max-width: 100%; /* Eviter que la carte dépasse son conteneur */
 }
 
-/* Icônes dans les cartes */
+/* Style des icônes dans les cartes */
 .genre-card i {
   font-size: 50px;
   color: #000000;
   transition: color 0.3s ease;
-  max-width: 100%; /* Empêche l'icône de dépasser son conteneur */
+  max-width: 100%; /* Eviter que l'icône dépasse */
   height: auto;
 }
 
-/* Effet de survol : changer la couleur du fond et des icônes */
-.genre-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  background-color: #0d1dff; /* Fond rouge tomate au survol */
-  color: #fff; /* Texte blanc au survol */
-}
-/* Assurer la réactivité des colonnes */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* Titres des genres */
+.genre-card h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.col-12,
-.col-sm-6,
-.col-md-6,
-.col-lg-3 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px; /* Espacement entre les cartes */
+/* Change la couleur du titre au survol */
+.genre-card:hover h5 {
+  color: white;
 }
+
+/* Style des descriptions des genres */
+.genre-card p {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+/* Change la couleur du texte des descriptions au survol */
+.genre-card:hover p {
+  color: white;
+}
+
+/* Effet de survol des cartes de genre */
+.genre-card:hover {
+  transform: translateY(-10px); /* Décalage de la carte au survol */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #6a91a1; /* Fond au survol */
+}
+
+.genre-card:hover i {
+  color: #ffffff; /* Icône au survol */
+}
+
+/* --- Mise en forme des colonnes --- */
+
+/* Assurer une disposition correcte des colonnes */
+.blabla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Espacement entre les cartes */
+  margin-bottom: 30px;
+}
+
+/* --- Cartes de films --- */
+
+.container h2 {
+  color: #ffffff;
+}
+/* Assurez-vous que les cartes ne débordent pas */
+.movie-genre-card {
+  background-color: #ffffff;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  /* margin-left: 5px; */
+}
+
+.genre-section {
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+/* Icônes dans les cartes */
+.movie-genre-card i {
+  font-size: 50px;
+  color: #000000;
+  transition: color 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Titres des genres */
+.movie-genre-card h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.movie-genre-card:hover h5 {
+  color: white;
+}
+
+/* Modifier la couleur du texte des descriptions */
+.movie-genre-card p {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.movie-genre-card:hover p {
+  color: white;
+}
+
+/* Effet de survol : changer la couleur du fond et des icônes */
+.movie-genre-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #6a91a1;
+}
+
+.movie-genre-card:hover i {
+  color: #ffffff;
+}
+
+/*************************************************************************** FIN BODY ***************************************************************************/
+/*************************************************************************** FOOTER ***************************************************************************/
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #4dffff;
+  animation: animate__fadeIn; /* Animation au survol */
+}
+
+.footer-icon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #4dffff;
+  animation: animate__pulse; /* Durée de l'animation */
+}
+
+.mailtel a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  transition: color 0.3s; /* Animation au survol */
+}
+
+.mailtel a:hover {
+  text-decoration: underline;
+  text-decoration-color: #4dffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/*************************************************************************** FIN FOOTER ***************************************************************************/
