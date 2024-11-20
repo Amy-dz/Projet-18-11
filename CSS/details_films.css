@@ -135,12 +135,42 @@ body {
 /*css déroulant*/
 .deroulement {
   color:white!important;
-
 }
 
 
+/*************************************************************************** Fin Carousel ***************************************************************************/
 
-[data-aos] {
-  opacity: 1 !important;
-  transform: none !important;
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #4dffff;
+  animation: animate__fadeIn; /* Animation au survol */
+}
+
+.footer-icon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #4dffff;
+  animation: animate__pulse; /* Durée de l'animation */
+}
+
+.mailtel a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  transition: color 0.3s; /* Animation au survol */
+}
+
+.mailtel a:hover {
+  text-decoration: underline;
+  text-decoration-color: #4dffff;
 }
