@@ -98,11 +98,11 @@ body {
 }
 
 .navbar-toggler-icon {
-  color: white; /* Par exemple, couleur rouge au survol */
+  color: white;
 }
 
 /*************************************************************************** FIN NAVBAR ***************************************************************************/
-/*************************************************************************** BODY ***************************************************************************/
+/****************************************************************************** BODY ***************************************************************************/
 
 h1 {
   color: white;
@@ -117,7 +117,7 @@ h1 {
 
 /* Container principal pour espacement */
 .container {
-  padding: 60px 15px; /* Un espacement ample pour le container */
+  padding: 60px 15px; /* espacement pour le container */
 }
 
 /* --- Cartes de genres --- */
@@ -132,9 +132,9 @@ h1 {
   color: #000000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Empêcher le débordement */
+  overflow: hidden; /* Empêche le débordement */
   height: auto; /* Ajuste la hauteur en fonction du contenu */
-  max-width: 100%; /* Eviter que la carte dépasse son conteneur */
+  max-width: 100%; /* Evite que la carte dépasse son conteneur */
 }
 
 /* Style des icônes dans les cartes */
@@ -142,7 +142,7 @@ h1 {
   font-size: 50px;
   color: #000000;
   transition: color 0.3s ease;
-  max-width: 100%; /* Eviter que l'icône dépasse */
+  max-width: 100%; /* Evite que l'icône dépasse */
   height: auto;
 }
 
@@ -155,7 +155,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Change la couleur du titre au survol */
+/* couleur du titre au survol */
 .genre-card:hover h5 {
   color: white;
 }
@@ -168,7 +168,7 @@ h1 {
   word-wrap: break-word;
 }
 
-/* Change la couleur du texte des descriptions au survol */
+/* couleur du texte des descriptions au survol */
 .genre-card:hover p {
   color: white;
 }
@@ -185,8 +185,6 @@ h1 {
 }
 
 /* --- Mise en forme des colonnes --- */
-
-/* Assurer une disposition correcte des colonnes */
 .blabla {
   display: flex;
   flex-wrap: wrap;
@@ -201,7 +199,6 @@ h1 {
   color: #ffffff;
 }
 
-/* Assurez-vous que les cartes ne débordent pas */
 .movie-genre-card {
   background-color: #ffffff;
   border: 5px solid #ddd;
@@ -215,7 +212,6 @@ h1 {
   max-width: 100%;
   height: auto;
   margin-bottom: 50px;
-  /* margin-left: 5px; */
 }
 
 .genre-section {
@@ -240,7 +236,6 @@ h1 {
   color: #ffffff;
 }
 
-/* Modifier la couleur du texte des descriptions */
 .movie-genre-card p {
   font-size: 14px;
   color: #000000;
@@ -252,7 +247,7 @@ h1 {
   color: white;
 }
 
-/* Effet de survol : changer la couleur du fond et des icônes */
+/* Effet de survol : couleur du fond et des icônes */
 .movie-genre-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -260,7 +255,7 @@ h1 {
 }
 
 /*************************************************************************** FIN BODY ***************************************************************************/
-/*************************************************************************** FOOTER ***************************************************************************/
+/**************************************************************************** FOOTER ***************************************************************************/
 
 .footer-link {
   color: #ddd;
@@ -288,7 +283,7 @@ h1 {
 
 .mailtel a {
   text-decoration: none;
-  color: #ffffff; /* Couleur par défaut */
+  color: #ffffff;
   transition: color 0.3s; /* Animation au survol */
 }
 
