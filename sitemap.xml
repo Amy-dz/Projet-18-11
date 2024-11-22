@@ -22,12 +22,35 @@
     <changefreq>weekly</changefreq>
   </url>
 
-<!-- Page Détail-->
+<!-- Pages Détail-->
   <url>
-    <loc>https://www.cine-flix.fr/Oppeinheimer</loc>
+    <loc>https://www.cine-flix.fr/oppeinheimer</loc>
     <priority>0.8</priority>
     <changefreq>yearly</changefreq>
   </url>
+    <url>
+    <loc>https://www.cine-flix.fr/halloween-ends</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+    <url>
+    <loc>https://www.cine-flix.fr/leon</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+    <url>
+    <loc>https://www.cine-flix.fr/sword-art-online</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+     <url>
+    <loc>https://www.cine-flix.fr/monster-house</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+
+
 
  <!-- Page Nouveautés -->
   <url>
