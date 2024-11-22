@@ -22,6 +22,13 @@
     <changefreq>weekly</changefreq>
   </url>
 
+<!-- Page Détail-->
+  <url>
+    <loc>https://www.cine-flix.fr/Oppeinheimer</loc>
+    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
  <!-- Page Nouveautés -->
   <url>
     <loc>https://www.cine-flix.fr/nouveautes</loc>
